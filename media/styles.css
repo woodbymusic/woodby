@@ -3,7 +3,7 @@ html {
   background-color: #efe9f4;
   box-sizing: border-box;
   color: #0a0c0c;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   overflow-x: hidden;
 }
@@ -12,6 +12,10 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
 }
 
 section {
@@ -41,7 +45,7 @@ section h1 {
   z-index: 10;
 }
 
-#home h2 {
+#home p {
   z-index: 10;
 }
 
