@@ -14,12 +14,54 @@ html {
   padding: 0;
 }
 
+a {
+  color: #1f2359;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+}
+
+a:hover {
+  transform: translateY(-2px);
+}
+
 h1, h2, h3 {
   font-family: "Raleway", sans-serif;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Nav bar - hidden on mobile devices */
+nav {
+  align-items: center;
+  background-color: #efe9f4;
+  box-shadow: 0 0 5px #bab5bf;
+  display: none;
+  grid-template-columns: 1fr auto;
+  height: 5em; /* height must match section padding top height below (@media) */
+  justify-content: space-between;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+nav a {
+  /* nav bar links */
+  margin: 0 1em;
+}
+
+/* Sections */
 section {
   display: grid;
+  grid-template-rows: auto 1fr;
   padding: 2em 2em 0 2em;
   position: relative;
 }
@@ -31,22 +73,35 @@ section h1 {
 #home {
   align-items: center;
   background-color: #0a0c0c;
-  color: #efe9f4;
-  cursor: default;
   grid-template-rows: auto;
   justify-items: center;
   min-height: 100vh;
 }
 
 #home h1 {
+  color: #efe9f4;
+  cursor: default;
   font-size: 3em;
   letter-spacing: 0.25em;
   padding: 0;
   z-index: 10;
 }
 
-#home p {
+.next {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #0a0c0c;
+  bottom: 5em;
+  height: 0;
+  left: calc(50% - 10px);
+  position: absolute;
+  width: 0;
   z-index: 10;
+}
+
+.next-behind {
+  border-top-color: #efe9f4;
+  z-index: 9;
 }
 
 #smoke-animation {
@@ -54,6 +109,44 @@ section h1 {
   position: absolute;
   top: 0;
   z-index: 1;
+}
+
+#about {
+  min-height: 50vh;
+}
+
+/* #music {
+} */
+
+#contact {
+  text-align: center;
+  padding-bottom: 6em;
+}
+
+#contact div {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+}
+
+/* Animation stuff */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+.pulse {
+  animation: pulse 1.5s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 .blur-in {
