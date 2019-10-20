@@ -11,12 +11,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="media/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
 </head>
 
 <body>
+  <nav>
+    <div class="text-left">
+      <h1>
+        <a href="#home">Woodby</a>
+      </h1>
+    </div>
+    <div class="text-right">
+      <a href="#music">Music</a>
+      <!-- <a href="link out to store">Store</a> -->
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
   <section id="home">
     <h1>
       <span class="blur-in blur-hover" id="W">W</span>
@@ -26,8 +38,32 @@
       <span class="blur-in blur-hover" id="b">b</span>
       <span class="blur-in blur-hover" id="y">y</span>
     </h1>
-    <p class="blur-in blur-hover">Coming Soon.</p>
+    <a href="#music" class="next"></a>
+    <div class="pulse next next-behind"></div>
     <canvas id="smoke-animation"></canvas>
+  </section>
+
+  <section id="music">
+    <h1>Music</h1>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/374423315&color=%2359b57b&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <div>
+      <a href="https://www.facebook.com/zac.whidby">
+        <i class="fa fa-facebook-square fa-4x"></i>
+      </a>
+      <a href="https://twitter.com/woodbymusic">
+        <i class="fa fa-twitter-square fa-4x"></i>
+      </a>
+      <a href="https://www.instagram.com/woodbymusic/">
+        <i class="fa fa-instagram fa-4x"></i>
+      </a>
+      <a href="https://soundcloud.com/woodby">
+        <i class="fa fa-soundcloud fa-4x"></i>
+      </a>
+    </div>
   </section>
 </body>
 
