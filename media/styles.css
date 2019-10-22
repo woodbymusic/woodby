@@ -1,4 +1,12 @@
 /* General styling */
+@font-face {
+    font-family: 'how_dumb_was_i';
+    src: url('howdumbwasi-webfont.woff2') format('woff2'),
+         url('howdumbwasi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
   background-color: #efe9f4;
   box-sizing: border-box;
@@ -26,7 +34,7 @@ a:hover {
 }
 
 h1, h2, h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "how_dumb_was_i", "Raleway", sans-serif;
 }
 
 .text-left {
